@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: #6c757d; /* Example light color */
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar a:hover {
+  color: #007bff; /* Example blue color */
+}
+
+.navbar.active {
+  display: block;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.icon-cart {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #007bff; /* Example blue color */
+}
+
+body {
+  background: #343a40; /* Example dark blue color */
+  overflow-x: hidden;
+  position: relative;
+}
+
+  
